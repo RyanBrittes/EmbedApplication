@@ -17,7 +17,3 @@ l = torch.rand_like(h) # Cria um conjunto de matrizes com aleatórios igual ao i
 m = torch.tensor((2, 5, 12, 1, 8)) # Conjunto de valores inteiros
 n = torch.tensor(((2, 5, 7), [5, 1, 9])) # -> Matriz 2D
 
-if torch.accelerator.is_available():
-    print('We have an accelerator!')
-else:
-    print('Sorry, CPU only.')
